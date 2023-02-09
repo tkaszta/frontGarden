@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     setLoading(true);
 
-    fetch('api/groups')
+    fetch('/viragok')
       .then(response => response.json())
       .then(data => {
         setGroups(data);
